@@ -62,3 +62,20 @@ html{
 .section-services p{
     font-size: 3.2rem;
 }
+
+.mobile-navbar-btn{
+    display: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.mobile-nav-icon{
+    width: 4rem;
+    height: 4rem;
+    color:#212529;
+}
+
+.mobile-nav-icon[name="close-outline"]{
+    display: none;
+    /* This is Attribute tagging */
+}
