@@ -79,3 +79,23 @@ html{
     display: none;
     /* This is Attribute tagging */
 }
+
+
+/* 992px */
+/* 1em = 16px */
+@media (max-width:62em) {
+    .mobile-navbar-btn{
+        display: block;
+        z-index: 999;
+        border: 3px solid #212529;
+        color: #212529;
+    }
+
+    /* .header ,.logo{
+        width: 40%;
+    } */
+
+    .navbar{
+        display: none;
+    }
+}
