@@ -1,14 +1,15 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-html{
-    font-size: 62.5%; /* 1rem = 10px */
+html {
+    font-size: 62.5%;
+    /* 1rem = 10px */
 }
 
-.header{
+.header {
     padding: 0 4.8rem;
     height: 10rem;
     display: flex;
@@ -17,19 +18,19 @@ html{
     background-color: #e7f5ff;
 }
 
-.header .logo{
+.header .logo {
     height: 8rem;
     border-radius: 50%;
 }
 
-.navbar-list{
+.navbar-list {
     display: flex;
     gap: 4.8rem;
     list-style: none;
 }
 
 .navbar-link:link,
-.navbar-link:visited{
+.navbar-link:visited {
     display: inline-block;
     text-transform: uppercase;
     text-decoration: none;
@@ -40,11 +41,12 @@ html{
 }
 
 .navbar-link:hover,
-.navbar-link:active{
+.navbar-link:active {
     color: #364fc7;
 }
 
-.section-hero, .section-services{
+.section-hero,
+.section-services {
     padding: 9.6rem 0;
     background-color: #a5d8ff;
     height: 60vh;
@@ -54,28 +56,28 @@ html{
     align-items: center;
 }
 
-.section-services{
+.section-services {
     background-color: aquamarine;
 }
 
-.section-hero p, 
-.section-services p{
+.section-hero p,
+.section-services p {
     font-size: 3.2rem;
 }
 
-.mobile-navbar-btn{
+.mobile-navbar-btn {
     display: none;
     background: transparent;
     cursor: pointer;
 }
 
-.mobile-nav-icon{
+.mobile-nav-icon {
     width: 4rem;
     height: 4rem;
-    color:#212529;
+    color: #212529;
 }
 
-.mobile-nav-icon[name="close-outline"]{
+.mobile-nav-icon[name="close-outline"] {
     display: none;
     /* This is Attribute tagging */
 }
@@ -84,7 +86,7 @@ html{
 /* 992px */
 /* 1em = 16px */
 @media (max-width:62em) {
-    .mobile-navbar-btn{
+    .mobile-navbar-btn {
         display: block;
         z-index: 999;
         border: 3px solid #212529;
@@ -95,7 +97,21 @@ html{
         width: 40%;
     } */
 
-    .navbar{
-        display: none;
+    .header {
+        position: relative;
+    }
+
+    .navbar {
+        /* display: none; */
+        /* display none se hum animation nahi dikha sakte isliye dusra upay use kiya hai height or width ka */
+        width: 100%;
+        height: 100vh;
+        background-color: #e7f5ff;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        display: flex;
+        justify-content: center;
     }
 }
